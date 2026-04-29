@@ -9,11 +9,10 @@ window.onload = function(){
         img.style.cssText = 'border-radius: 6px; width: 100%;'
         
         img.onload = function() {
-            if(img.width == 120) {
-                img.src = `https://i.ytimg.com/vi/${src}/mqresdefault.jpg`
+            if(img.naturalWidth == 120) {
+                img.src = `https://i.ytimg.com/vi/${src}/mqdefault.jpg`
             }
         }
-
         img.src = `https://i.ytimg.com/vi/${src}/maxresdefault.jpg`;
         imageContainer.appendChild(img);
     } else{
